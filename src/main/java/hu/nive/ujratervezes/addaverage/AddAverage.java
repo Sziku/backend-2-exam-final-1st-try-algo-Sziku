@@ -1,5 +1,7 @@
 package hu.nive.ujratervezes.addaverage;
 
+import java.util.Arrays;
+
 public class AddAverage {
 
     public int[] addAverage(int[] numbers, int n) {
@@ -20,10 +22,9 @@ public class AddAverage {
 
         for(int i = n - 1; i< numbers.length;){
             int tmp = numbers[i];
-            numbers[i] = tmp+average;
+            numbers[i] = tmp*average;
             i = i + n;
         }
-
         return numbers;
     }
 
